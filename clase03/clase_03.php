@@ -130,7 +130,8 @@ foreach ($empleados as $empleado) {
 
 // funciones para arrays
 $nombres = array("Carlos", "Ana", "pedro", "Luisa");
-sort($nombres); // ordena el array en orden ascendente
+// ordena el array en orden ascendente
+sort($nombres); 
 echo "Nombres ordenados:<br>";
 foreach ($nombres as $nombre) {
     echo "$nombre<br>";
