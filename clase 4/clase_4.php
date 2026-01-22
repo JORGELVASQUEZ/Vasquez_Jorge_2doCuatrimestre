@@ -93,3 +93,17 @@ try {
     echo("<p> operacion finalizada. </p> <br>");
 }
 echo("<p> programa continua ejecutandose normalmente. </p> <br>");
+
+// tipos de errores en php
+// divisionByZeroError: ocurre cuando se intenta dividir un número por cero.
+// parseError: ocurre cuando hay un error de sintaxis en el código PHP.
+// typeError: ocurre cuando se pasa un argumento de un tipo incorrecto a una función o método.
+// notice: son advertencias que indican que algo podría estar mal en el código, pero no detienen la ejecución del programa. 
+// warning: son advertencias más graves que los notices, pero tampoco detienen la ejecución del programa.
+// fatalError: son errores graves que detienen la ejecución del programa inmediatamente.
+// undefinedVariable: ocurre cuando se intenta acceder a una variable que no ha sido definida.
+// indexOutOfBounds: ocurre cuando se intenta acceder a un índice que está fuera del rango válido de un arreglo.
+// memoryLimitExceeded: ocurre cuando un script intenta usar más memoria de la que tiene asignada.
+// fileNotFound: ocurre cuando se intenta incluir o requerir un archivo que no existe.
+// databaseConnectionError: ocurre cuando hay un problema al intentar conectarse a una base de datos.
+// notice y warning no se pueden capturar con try catch, pero los demas si.
