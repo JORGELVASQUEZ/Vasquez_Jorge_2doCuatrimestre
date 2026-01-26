@@ -98,6 +98,7 @@ echo("<p> programa continua ejecutandose normalmente. </p> <br>");
 // divisionByZeroError: ocurre cuando se intenta dividir un número por cero.
 // parseError: ocurre cuando hay un error de sintaxis en el código PHP.
 // typeError: ocurre cuando se pasa un argumento de un tipo incorrecto a una función o método.
+// exeption: es la clase base para todas las excepciones en PHP.
 // notice: son advertencias que indican que algo podría estar mal en el código, pero no detienen la ejecución del programa. 
 // warning: son advertencias más graves que los notices, pero tampoco detienen la ejecución del programa.
 // fatalError: son errores graves que detienen la ejecución del programa inmediatamente.
