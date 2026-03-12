@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 2</title>
+</head>
+<body>
+    <h1>Ejemplo 2: haz un programa que simule una encuesta de satisfacción</h1>
+    <hr>
+    <form action="ejemplo2.php" method="post">
+        <label>Ingrese su nombre:</label>
+        <input type="text" name="nombre" required>
+        <select name="satisfaccion" required>
+            <option value="">Seleccione su nivel de satisfacción</option>
+            <option value="1">1 - Muy satisfecho</option>
+            <option value="2">2 - satisfecho</option>
+            <option value="3">3 - Neutral</option>
+            <option value="4">4 - insatisfecho</option>
+            <option value="5">5 - Muy insatisfecho</option>
+        </select>
+        <br>
+        <label>Comentarios adicionales:</label>
+        <br>
+        <textarea name="comentarios" rows="4" cols="50"></textarea>
+        <br> 
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
