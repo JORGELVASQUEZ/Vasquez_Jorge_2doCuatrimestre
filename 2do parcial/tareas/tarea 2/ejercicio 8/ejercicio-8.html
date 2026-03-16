@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8</title>
+</head>
+<body>
+    <h1>Crea un formulario que pida una base numérica entera y un exponente
+máximo (Número entre 1 y 10). Al enviar el formulario, calcula y muestra:</h1>
+<h2>Una tabla con las potencias de la base desde el exponente 1 hasta el
+exponente máximo ingresado, con el formato:</h2>
+<h3>2^1 = 2</h3>
+<h3>2^2 = 4</h3>
+<h3>2^3 = 8</h3>
+<h2>Usa pow() o el operador ** para calcular cada potencia.</h2>
+<h2>b. La suma de todas las potencias calculadas en la tabla.</h2>
+<h2>c. Para cada resultado, indica si el número es par o impar.</h2>
+<form action="ejercicio-8.php" method="post">
+    <label for="base">Base numérica entera:</label>
+    <input type="number" id="base" name="base" required><br><br>
+    <label for="exponente">Exponente máximo (1-10):</label>
+    <input type="number" id="exponente" name="exponente" min="1" max="10" required><br><br>
+    <input type="submit" value="Calcular">
+</form>
+</body>
+</html>

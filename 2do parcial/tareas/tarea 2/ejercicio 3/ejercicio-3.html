@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Crea un formulario que pida las calificaciones y los porcentajes de peso de
+tres evaluaciones, por ejemplo:</h1>
+<h2>a. Parcial 1: Calificación y su porcentaje de peso.</h2>
+<h2>b. Parcial 2: Calificación y su porcentaje de peso.</h2>
+<h2>c. Examen final: Calificación y su porcentaje de peso.</h2>
+<h1>Recuerda que la suma de estos porcentajes de peso, debe ser del 100%.
+Al enviar el formulario, muestra lo siguiente:</h1>
+<h2>a. La aportación ponderada de cada evaluación (Calificación x
+porcentaje / 100).</h2>
+<h2>b. El promedio ponderado final (Suma de las 3 aportaciones).</h2>
+<h2>c. Si el alumno aprobó o reprobó (Mínimo aprobatorio: 60).</h2>
+<h2>d. La evaluación con la calificación más alta y la más baja.</h2>
+<form action="ejercicio-3.php" method="post">
+    <h3>Parcial 1:</h3>
+    <label for="calificacion1">Calificación:</label>
+    <input type="number" id="calificacion1" name="calificacion1" required>
+    <label for="peso1">Porcentaje de peso:</label>
+    <input type="number" id="peso1" name="peso1" required>
+
+    <h3>Parcial 2:</h3>
+    <label for="calificacion2">Calificación:</label>
+    <input type="number" id="calificacion2" name="calificacion2" required>
+    <label for="peso2">Porcentaje de peso:</label>
+    <input type="number" id="peso2" name="peso2" required>
+
+    <h3>Examen final:</h3>
+    <label for="calificacion3">Calificación:</label>
+    <input type="number" id="calificacion3" name="calificacion3" required>
+    <label for="peso3">Porcentaje de peso:</label>
+    <input type="number" id="peso3" name="peso3" required>
+
+    <button type="submit">Calcular</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+</head>
+<body>
+    <h1>Crea un formulario que pida lo siguiente:</h1>
+<h2>a. Nombre(s) del usuario</h2>
+<h2>b. Apellido paterno</h2>
+<h2>c. Apellido materno</h2>
+<h2>d. Año de nacimiento</h2>
+<h1>Al enviar el formulario, genera y muestra las siguientes sugerencias de
+nombre de usuario (en minúsculas, sin acentos):</h1>
+<h2>a. Primera letra del nombre + apellido paterno completo, por ejemplo:
+“jperez”.</h2>
+<h2>b. Nombre completo + los últimos 2 dígitos del año de nacimiento, por
+ejemplo: “juan95”.</h2>
+<h2>c. Apellido paterno + apellido materno + primera letra del nombre, por
+ejemplo: “perezlopezj”.</h2>
+<h2>d. Primera letra del nombre + primera letra del apellido paterno + primera
+letra del apellido materno + año completo, por ejemplo: “jpl1995”.</h2>
+<h2>e. Apellido paterno al revés + número de caracteres que tiene el nombre
+completo del usuario (Nombre + ambos apellidos), por ejemplo:
+“zerep14”.</h2>
+<h1>Para todas las sugerencias, convierte todo a minúsculas y elimina espacios.</h1>
+<form action="ejercicio-9.php" method="post">
+    <label for="nombre">Nombre(s):</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="apellido_paterno">Apellido Paterno:</label>
+    <input type="text" id="apellido_paterno" name="apellido_paterno" required><br><br>
+
+    <label for="apellido_materno">Apellido Materno:</label>
+    <input type="text" id="apellido_materno" name="apellido_materno" required><br><br>
+
+    <label for="anio_nacimiento">Año de Nacimiento:</label>
+    <input type="number" id="anio_nacimiento" name="anio_nacimiento" required><br><br>
+
+    <input type="submit" value="Generar Sugerencias">
+</form>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+</head>
+<body>
+    <h1>Crea un formulario que pida:</h1>
+<h2>a. Datos del usuario</h2>
+<h2>b. Sexo (Mediante un select)</h2>
+<h2>c. Peso en kilogramos</h2>
+<h2>d. Altura en centímetros</h2>
+<h2>e. Edad en años</h2>
+<h3>Nivel de actividad física (Usa un select con opciones):</h3>
+<h3>i. Sedentario (Poco o nada de ejercicio) -> factor: 1.2</h3>
+<h3>ii. Ligero (Ejercicio 1 – 3 días/semana) -> factor: 1.375</h3>
+<h3>iii. Moderado (Ejercicio 3 – 5 días/semana) -> factor: 1.55</h3>
+<h3>iv. Activo (Ejercicio 6 – 7 días/semana) -> factor: 1.725</h3>
+
+<h1>Enviar el formulario, calcula la TMB usando la fórmula de Harris Benedict
+y muestra:</h1>
+<h2>a. El nombre del usuario y sus datos (peso, altura, edad).</h2>
+<h2>b. La TMB (Calorías en reposo por día):</h2>
+<h3>a. Hombres: TMB = 88.36 + (13.4 x peso) + (4.8 x altura) – (5.7 x
+edad)</h3>
+
+<h3>b. Mujeres: TMB = 447.6 + (9.2 x peso) + (3.1 x altura) – (4.3 x
+edad)</h3>
+
+<h3>c. Las calorías diarias recomendadas según el nivel de actividad (Usa la
+fórmula TMB x factor de actividad), redondeadas a 2 decimales.</h3>
+<form action="ejercicio-4.php" method="post">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="sexo">Sexo:</label>
+    <select id="sexo" name="sexo" required>
+        <option value="">Seleccione</option>
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+    </select><br><br>
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" name="peso" step="0.1" required><br><br>
+
+    <label for="altura">Altura (cm):</label>
+    <input type="number" id="altura" name="altura" step="0.1" required><br><br>
+
+    <label for="edad">Edad (años):</label>
+    <input type="number" id="edad" name="edad" required><br><br>
+
+    <label for="actividad">Nivel de actividad física:</label>
+    <select id="actividad" name="actividad" required>
+        <option value="">Seleccione</option>
+        <option value="1.2">Sedentario (Poco o nada de ejercicio)</option>
+        <option value="1.375">Ligero (Ejercicio 1 – 3 días/semana)</option>
+        <option value="1.55">Moderado (Ejercicio 3 – 5 días/semana)</option>
+        <option value="1.725">Activo (Ejercicio 6 – 7 días/semana)</option>
+    </select><br><br>
+
+    <input type="submit" value="Calcular TMB">
+</form>
+</body>
+</html>
